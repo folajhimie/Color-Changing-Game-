@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Padauk&display=swap');
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Padauk', sans-serif;
+}
+body{
+    background-image: linear-gradient(to right, rgb(100, 207, 13), rgba(255, 238, 0, 0.801));
+}
+/* THE CONTAINER STYLING BEGINS HERE  */
+.container{
+    margin-top: 7%;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-bottom: 5%;
+    border: 2px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 70vh;
+    background-color: wheat;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+/* THE CONTENT IS WHERE WE STYLED THE BUTTONS */
+.content{
+    display: grid;
+    justify-content: center;
+    /* align-items: center; */
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+/* THE NAVBAR IS WHERE WE STYLED THE DISPLAY SCREEN  */
+.navbar{
+    margin: 20px;
+    border: 1px solid;
+    height: 40vh;
+    background-color: white;
+    border: 2px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+/* THE H2 ARE THE LETTERINGS WITHIN THE SCREEN  */
+h2{
+    /* font-size: 7px; */
+    text-align: center;
+    /* height: 20vh; */
+    font-size: 17px;
+}
+/* THE SQUARE ARE THE BUTTONS  */
+.square{
+    padding: 10px;
+    border: 1px solid white;
+}
+.square:hover{
+    background-color: rgb(170, 165, 165);
+}
+/* SQUARE STYLING ENDS HERE  */
+
+/* THE RESET BUTTON STYLING BEGINS HERE  */
+.reset{
+    outline: none;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+
+}
+.reset:hover{
+    background-color: rgb(149, 158, 151);
+    color:rgb(255, 255, 255);
+    transition: .5s ease-in;
+}
+/* THE RESET BUTTON ENDS HERE  */
+
+
+@media screen and (max-width: 600px) {
+    .container{
+        margin-top: 7%;
+        margin-left: 25%;
+        margin-right: 30%;
+        margin-bottom: 5%;
+        border: 2px solid;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 70vh;
+        background-color: wheat;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+}
+
+
+
